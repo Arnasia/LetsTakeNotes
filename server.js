@@ -3,7 +3,7 @@ const fs = require ('fs');
 const express = require ("express");
 const path = require("path")
 const app = express();
-const generateRandomID = require()
+const uuid = require('uuid')
 
 const PORT = process.env.PORT || 3001;
 
@@ -40,6 +40,15 @@ app.get('/LetsTakeNotes', (req, res) => {
   app.get('/api/LetsTakeNotes', (req, res) => {
     res.json(LetsTakeNotes);
   });
+
+  app.post('/api/notes', (req, res) => {
+    req.body.id = uuid();
+    const note = takeNote(req.body, LetsTakeNotes);
+    res.json(note);
+  });
+
+  
+
   
 
 
