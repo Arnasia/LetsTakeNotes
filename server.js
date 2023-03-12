@@ -7,6 +7,8 @@ const uuid = require('uuid')
 
 const PORT = process.env.PORT || 3001;
 
+const { LetsTakeNotes } = require ("./db/db")
+
 //parses incoming JSON data
 app.use(express.urlencoded({extended: true}));
 
