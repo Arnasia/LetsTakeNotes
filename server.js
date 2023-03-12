@@ -20,7 +20,13 @@ app.use(express.static('public'));
 function takeNote (body) {
     const note = body;
     LetsTakeNotes.push(note);
-    
-}
+    fs.writeFileSync(
+        path.join(__dirname, './db/db.json'),
+        JSON.stringify({ LetsTakeNotes }, null, 2)
+    );
+    return note;
+};
+
+
 
 
