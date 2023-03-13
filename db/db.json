@@ -1,8 +1,18 @@
 {
-    "LetsTakeNotes": [
-        {
-            "title":"Test Title",
-            "text":"Test text"
-        }
-    ]
+  "notes": [
+    {
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "title": "Subject",
+      "text": "get notes",
+      "id": "34039b3e-bde9-4dfc-8e8b-fecd0a51d4e5"
+    },
+    {
+      "title": "Groceries",
+      "text": "Milk\nEggs\nWalnuts\nBread\nFruit\nButter\nChicken",
+      "id": "5ba1d09d-ba9d-4bfe-a3ad-5794b85958ff"
+    }
+  ]
 }
