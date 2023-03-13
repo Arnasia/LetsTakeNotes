@@ -41,8 +41,6 @@ app.post('/api/notes', (req, res) => {
   res.json(note);
 });
 
-// POST
-// readFile
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
@@ -51,6 +49,16 @@ app.get('/', (req, res) => {
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'));
 });
+
+ //delete notes 
+ app.delete('/api/notes/:id', (req, res) => {
+    const { id } = req.params;
+  
+    const removeNote = notes.findIndex(note => note.id ==id);
+  
+    notes.splice(removeNote, 1);
+    return res.send();
+  });
 
   //app listerner
   app.listen(PORT, () => {

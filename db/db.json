@@ -1,18 +1,14 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text"
+      "title": "Make Dinner Plans with mom",
+      "text": "She do not want any sushi\nMaybe she want some good ole pasta ",
+      "id": "c8ed6ef9-131b-4491-944e-5c4889f1d634"
     },
     {
-      "title": "Subject",
-      "text": "get notes",
-      "id": "34039b3e-bde9-4dfc-8e8b-fecd0a51d4e5"
-    },
-    {
-      "title": "Groceries",
-      "text": "Milk\nEggs\nWalnuts\nBread\nFruit\nButter\nChicken",
-      "id": "5ba1d09d-ba9d-4bfe-a3ad-5794b85958ff"
+      "title": "Call your brother",
+      "text": "remind him of the baseball tickets you bought him",
+      "id": "a3fd4cf4-6ce9-438a-ae52-2ece8cf64761"
     }
   ]
 }
